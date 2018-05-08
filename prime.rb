@@ -6,7 +6,7 @@ def prime?(int)
     return true
   elsif
     (2..int).to_a.each do |num|
-      if int % num == 0
+      if int % num == 0 && num < int
         return false
       end
     end
