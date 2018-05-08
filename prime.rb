@@ -1,9 +1,16 @@
 # Add  code here!
 def prime?(num)
-  x = 2 
-  while(x <= num )
-    true if num % x == 0 
-    x += 1 
+  is_prime = true
+  
+  x = 2
+  while(x <= num)
+    if num % x == 0 && num == x 
+    	is_prime = false
+    end
+    
+    x = x + 1
   end
-  end
+  
+  is_prime
+end
   
