@@ -7,8 +7,7 @@ def prime?(num)
     if num % x == 0 && num == x 
     	is_prime = false
     end
-    
-    x = x + 1
+        x = x + 1
   end
   
   is_prime
