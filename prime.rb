@@ -5,8 +5,8 @@ def prime?(int)
   elsif int == 2
     return true
   elsif
-    (2..int).to_a.each do |num|
-      if int % num == 0 && num < int
+    (2..int-1).to_a.each do |num|
+      if int % num == 0
         return false
       end
     end
