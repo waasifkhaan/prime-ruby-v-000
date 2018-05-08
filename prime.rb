@@ -7,8 +7,8 @@ def prime?(int)
       if int % num == 0
         return true
       end
-      return false
     end
+    return false
   end
 end
 
