@@ -5,10 +5,10 @@ def prime?(int)
   elsif
     (2..int).to_a.each do |num|  [2,3,4]
       if int % num == 0
-        return false
+        return true
       end
     end
-    return true
+    return false
   end
 end
 
