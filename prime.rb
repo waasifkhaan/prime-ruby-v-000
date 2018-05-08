@@ -1,16 +1,15 @@
 # Add  code here!
-def prime?(num)
-  is_prime = true
-  
-  x = 2
-  while(x <= num)
-    if num % x == 0 && num == x 
-    	is_prime = false
+def prime?(int)
+  if int < 2
+    return false
+  elsif
+    (2..int).to_a.each do |num|
+      if num % int == 0
+        return true
+      end
+      return false
     end
-        x = x + 1
   end
-  
-  is_prime
 end
 
 
